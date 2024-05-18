@@ -1,0 +1,94 @@
+.log-in{
+   width: 400px;
+   height: 700px;
+   border: 1px solid #ddd   ;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%,-50%);
+   padding: 20px 10px;
+}
+h4,p,span{
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   color: #333;
+}
+.log-in h4{
+   text-align: center;
+   font-size: 16px;
+   color: #333;
+   font-weight: 500;
+
+}
+.log-in p{
+   font-size: 15px;
+}
+.log-in input{
+   padding: 10px 6px;
+   width: 100%;
+   margin: auto;
+   margin-top: -10px;
+   outline: none;
+   border: 2px solid #a5a4a4;
+   box-sizing: border-box;
+}
+
+::placeholder{
+   padding-left: 4px;
+}
+.log-in-btn{
+   width: 100%;
+   margin: 20px 0;
+   padding: 10px 0;
+   color: #fff;
+   border: 0;
+   outline: 0;
+   background-color: #0e78cf;
+   font-size: 16px;
+   cursor: pointer;
+}
+
+.log-in-btn:hover{
+   background-color: #0d6fc0;
+}
+.forgot{
+   color: #0e78cf;
+   cursor: pointer;
+   margin-bottom: 10px;
+   display: block;
+}
+.forgot:hover{
+   text-decoration: underline;
+}
+hr{
+   display: inline-block;
+   width: 47.5%;
+
+}
+
+.new-btn{
+   display:block;
+   width: 150px;
+   margin: auto;
+   margin-top: 20px;
+   padding: 8px 0;
+   background-color: #39b139;
+   border: none;
+   outline: none;
+   color: #fff;
+   cursor: pointer;
+
+
+
+
+}
+.new-btn:hover{
+   background-color: #35a035;
+
+}
+
+.log-in .color,span{
+   display: block;
+   color: #0e78cf;
+   margin: 15px 0;
+   cursor: pointer;
+}

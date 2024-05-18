@@ -1,0 +1,126 @@
+*{
+   margin: 0;
+   padding: 0;
+   font-family: sans-serif;
+}
+body{
+   background-color: #FCDC00;
+}
+.nav-bar{
+   background-color: #000;
+}
+nav{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 80%;
+   max-width: 1300px;
+   margin: auto;
+   padding: 15px 0;
+
+
+}
+nav img{
+   width: 250px;
+}
+.nav-links{
+   flex: 1;
+   text-align: right;
+}
+.nav-links ul li{
+   display: inline-block;
+   margin-left: 25px;
+}
+.nav-links ul li a{
+   color: #fff;
+   text-decoration: none;
+   font-size: 16px;
+}
+.nav-links ul li::after{
+   content: '';
+   width: 0;
+   height: 2px;
+   background-color: #fff;
+   display: block;
+   margin: auto;
+   transition: 0.5s;
+
+}
+.nav-links ul li:hover:after{
+   width: 100%;
+}
+.text-area{
+   width: 80%;
+   margin: auto;
+   max-width: 1300px;
+}
+.text-area h3{
+   background-color: #000;
+   display: inline-block;
+   margin-top: 100px;
+   color: #FCDC00;
+   padding: 10px 24px;
+   letter-spacing: 5px;
+}
+.text-area h1{
+   font-size: 70px;
+   width: 100%;
+   margin: 15px 0;
+}
+.text-area h2{
+   font-size: 46px;
+   font-style: italic;
+}
+.text-area h2 span{
+   font-size: 24px;
+}
+.text-area-2{
+   width: 750px;
+   margin: auto;
+   text-align: center;
+   padding-top: 120px;
+}
+.text-area-2 h2{
+   font-size: 30px;
+   margin-bottom: 20px;
+   font-weight: 600;
+
+}
+.text-area-2 p{
+   font-size: 18px;
+}
+.text-area-2 input{
+   width: 700px;
+   margin: auto;
+   background-color: #000;
+   color: #fff;
+   padding: 18px 6px;
+   font-size: 18px;
+   border: none;
+   outline: none;
+   border-radius: 40px;
+   margin-top: 30px;
+}
+.text-area-2 input::placeholder{
+   color: #fff;
+
+}
+.btn{
+   background-color: #f309ad;
+   display: inline-block;
+   margin-top: 100px;
+   padding: 12px 24px;
+   color: #fff;
+   text-decoration: none;
+   font-size: 18px;
+   letter-spacing: 2px;
+   border: 1px solid #f309ad;
+   transition: 0.5s;
+   border-radius: 30px;
+
+}
+.btn:hover{
+   background-color: #fff;
+   color: #f309ad;
+   border-radius: 0;
+}

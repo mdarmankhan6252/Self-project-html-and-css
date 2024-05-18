@@ -1,0 +1,386 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: sans-serif;
+}
+.banner{
+   width: 100%;
+   height: 100vh;
+   background: linear-gradient(rgba(0,0,40,0.4),rgba(0,0,40,0.4)),url(img/background.jpg);
+   background-position: center;
+   background-size: cover;
+   position: relative;
+}
+nav{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 90%;
+   max-width: 1300px;
+   margin: auto;
+   padding: 2% 0;
+}
+nav h1 a{
+   text-decoration: none;
+   color: #fff;
+   font-size: 24px;
+   font-weight: 500;
+   letter-spacing: 0.5px;
+}
+nav h1 a span{
+   color: #ffe91e;
+}
+.nav-links{
+   flex: 1;
+   text-align: right;
+}
+.nav-links ul li{
+   display: inline-block;
+   margin-left: 25px;
+}
+.nav-links ul li a{
+   text-decoration: none;
+   color: #fff;
+   font-size: 15px;
+}
+.nav-links ul li::after{
+   content: '';
+   width: 0;
+   height: 2px;
+   display: block;
+   background-color: #fff;
+   transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+   width: 100%;
+}
+.text-area{
+   width: 90%;
+   max-width: 1300px;
+   margin: auto;
+   text-align: center;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%,-50%);
+}
+.text-area h1,.text-area h1 span{
+   color: #fff;
+   font-size: 56px;
+   font-family: monospace;
+}
+.text-area h1 span{
+   color: #ffe91e;
+}
+.text-area p{
+   color: #fff;
+   font-size: 15px;
+   padding: 10px 0;
+}
+.btn{
+   border: 1px solid #fff;
+   display: inline-block;
+   padding: 9px 22px;
+   margin-top: 30px;
+   font-size: 14px;
+   text-decoration: none;
+   color: #fff;
+   letter-spacing: 1px;
+   font-weight: 600;
+   border-radius: 4px;
+   transition: 0.5s;
+}
+.btn:hover{
+   background-color: #ffe91e;
+   color: #000;
+   border: 1px solid #ffe91e;
+}
+
+/* ----------------------about us---------------- -- */
+
+.about{
+   padding-top: 70px;
+   width: 90%;
+   max-width: 1300px;
+   margin: auto;
+}
+.about h1{
+   text-align: center;
+   font-size: 40px;
+   padding: 10px 0;
+}
+.about span{
+   display: block;
+   text-align: center;
+   padding-bottom: 50px;
+   color: #555;
+   font-weight: 300;
+   letter-spacing: 0.5px;
+}
+.row{
+   display: flex;
+   justify-content: space-between;
+}
+.about-col-1{
+   flex-basis: 35%;
+   
+   border-radius: 10px;
+}
+.about-col-1 img{
+   width: 100%;
+   border-radius: 10px;
+   display: block;
+   border: 2px solid #fff;
+   outline: 1px solid #000;
+   
+
+}
+.about-col-2{
+   flex-basis: 60%;
+}
+.about-col-2 p{
+   letter-spacing: 0.5px;
+   line-height: 25px;
+   text-align: justify;
+   color: #180125;
+}
+.about-col-2 li{
+   line-height: 30px;
+   font-size: 17px;
+   color: #440139;
+   list-style: square;
+
+}
+
+/* ------------------skills---------------- */
+
+.skills{
+   text-align: center;
+   width: 90%;
+   max-width: 1300px;
+   margin: auto;
+}
+.skills h1{
+   padding: 100px 0 50px;
+   font-size: 40px;
+}
+.skills-col{
+   flex-basis: 15%;
+   padding: 25px 30px;
+   border-radius: 10px;
+   background-color: #dccbfa;
+   box-shadow: 0 0 20px 0 rgba(149, 13, 190, 0.4);
+}
+
+/* ---------------------services------------------- */
+
+.services{
+   width: 90%;
+   max-width: 1300px;
+   margin: auto;
+   text-align: center;
+   padding-top: 100px;
+}
+.services h1{
+   font-size: 40px;
+   padding-bottom: 5px;
+}
+.services span{
+   color: #555;
+   font-weight: 300;
+}
+.service-col{
+   flex-basis: 28%;
+   border: 1px solid #ddd;
+   background-color: #f3f2f2;
+   margin-top: 70px;
+   padding: 20px 15px;
+   letter-spacing: 0.5px;
+   line-height: 24px;
+   border-radius: 10px;
+   cursor: pointer;
+   transition: 0.5s;
+}
+.service-col:hover{
+   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+}
+.service-col h3{
+   font-size: 23px;
+   padding: 10px 0;
+}
+.service-col p{
+   font-size: 15px;
+   text-align: justify;
+}
+
+/* ------------------portfolio--------------------- */
+
+.portfolio{
+   width: 90%;
+   max-width: 1300px;
+   margin: auto;
+   padding-top: 100px;
+   text-align: center;
+}
+.portfolio h1{
+   font-size: 40px;
+   padding: 5px 0;
+
+}
+.portfolio span{
+   color: #555;
+   font-weight: 300;
+}
+.portfolio-col{
+   flex-basis: 23%;
+   border: 1px solid #ddd;
+   margin-top: 70px;
+   border-radius: 10px;
+}
+.portfolio-col img{
+   width: 100%;
+   border-radius: 10px 10px 0 0;
+
+}
+.portfolio-col h3{
+   padding: 10px 0;
+   font-size: 22px;
+   font-weight: 500;
+}
+.portfolio-col p{
+   font-size: 15px;
+   padding: 0 10px;
+   letter-spacing: 0.5px;
+   line-height: 24px;
+   text-align: justify;
+}
+.btn-2{
+   border: 1px solid #440139;
+   color: #000;
+   margin-bottom: 10px;
+}
+
+/* -----------------------------contact-------------------- */
+
+.contact{
+   text-align: center;
+   padding: 100px 0;
+   width: 60%;
+   max-width: 800px;
+   margin: auto;
+}
+.contact h1{
+   font-size: 40px;
+   margin-bottom: 70px;
+}
+.contact input,textarea{
+   width: 100%;
+   margin-bottom: 25px;
+   padding: 10px 4px;
+   border: 1px solid #550848;
+   font-size: 17px;
+   outline: none;
+   border-radius: 6px;
+}
+input:focus{
+   outline: 1px solid #f00a98;
+}
+textarea:focus{
+   outline: 1px solid #f00a98;
+}
+::placeholder{
+   color: #3f046e;
+}
+hr{
+   margin: 10px 0;
+   border: 1px solid #df09cd;
+}
+
+/* -----------------footer------------- */
+
+footer{
+   width: 40%;
+   max-width: 800px;
+   margin: auto;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 50px 0;
+}
+footer h4 a{
+   text-decoration: none;
+   color: #fff;
+   font-weight: 500;
+   border: 1px solid #000;
+   padding: 10px 18px;
+   border-radius: 30px;
+   background-color: #3f046e;
+   transition: 0.5s;
+}
+footer h4 a:hover{
+   border: 1px solid #3f046e;
+   background-color: transparent;
+   color: #000;
+}
+/* -----------@media--------------- */
+@media(max-width:900px){
+   .text-area h1,.text-area h1 span{
+      font-size: 30px;
+   }
+   .row{
+      display: block;
+   }
+   .about-col-1{
+      padding-bottom: 5%;
+   }
+   .skills-col{
+      margin-top: 5%;
+   }
+   .contact h1{
+      font-size: 36px;
+   }
+   .contact{
+      width: 90%;
+      margin: auto;
+   }
+   .contact input,textarea{
+      width: 100%;
+   }
+   footer{
+      width: 95%;
+      margin: auto;
+
+   }
+   
+
+}
+
+small{
+   border: 1px solid #fff;
+   padding: 8px 18px;
+   border-radius: 30px;
+   color: #fff;
+   font-size: 14px;
+   position: absolute;
+   right: 15px;
+   top: 10px;
+   cursor: pointer;
+   transition: 0.5s;
+   visibility:hidden;
+}
+small:hover{
+   background-color: #3f046e;
+   border: 1px solid #3f046e;
+}
+
+@media(max-width:700px){
+nav ul li a{
+   display: none;
+}
+small{
+   visibility: visible;
+}
+
+}
+
